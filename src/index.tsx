@@ -20,3 +20,7 @@ const ReactNativeGrpc = NativeModules.ReactNativeGrpc
 export function multiply(a: number, b: number): Promise<number> {
   return ReactNativeGrpc.multiply(a, b);
 }
+
+export function Plus(a: number, b: number): Promise<number> {
+  return ReactNativeGrpc.Plus(a, b);
+}

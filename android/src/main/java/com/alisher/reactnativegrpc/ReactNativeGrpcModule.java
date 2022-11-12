@@ -29,4 +29,9 @@ public class ReactNativeGrpcModule extends ReactContextBaseJavaModule {
   public void multiply(double a, double b, Promise promise) {
     promise.resolve(a * b);
   }
+
+  @ReactMethod
+  public void Plus(double a,double b,Promise promise){
+    promise.resolve(a+b);
+  }
 }

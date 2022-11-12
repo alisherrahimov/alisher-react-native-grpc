@@ -14,6 +14,16 @@ RCT_REMAP_METHOD(multiply,
 
     resolve(result);
 }
+RCT_REMAP_METHOD(Plus,
+                 multiplyWithA:(double)a withB:(double)b
+                 withResolver:(RCTPromiseResolveBlock)resolve
+                 withRejecter:(RCTPromiseRejectBlock)reject)
+{
+    NSNumber *result = @(a + b);
+
+    resolve(result);
+}
+
 
 // Don't compile this code when we build for the old architecture.
 #ifdef RCT_NEW_ARCH_ENABLED
